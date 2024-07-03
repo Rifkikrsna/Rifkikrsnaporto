@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZP9QSS9HW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FZP9QSS9HW');
+    </script>
+
+    <!--Import files and libaries-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon1.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-9">
+    <title>Rifkikrsna</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/boxshadow.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Lightbox/lightbox-plus-jquery.js"></script>
+    <script>lightbox.option({ disableScrolling: true });</script>
+
+
+</head>
+
+<body>
+    <!--Page loading animation-->
+    <div class="loader-wrapper">
+        <span class="pac-man"></span>
+        <div class="loading-text">
+            <p>Loading assets...</p>
+        </div>
+    </div>
+
+    <!--Header section (Icon, title, etc)-->
+    <div id="landing" class="header" data-aos="fade-up" loading="lazy">
+        <div id="header-img" class="header"></div>
+        <div id="scrollpath"></div>
+        <div id="scrollbar"></div>
+        <div class="Title">
+            <img src="resource/image/conn.png" class="shad-mid">
+            <h1>PORTOFOLIO</h1>
+            <p>I am <b>Rifki Krisna Maulana</b><br>
+                Welcome to my web page!</p>
+            <svg></svg><br>
+            <a class="commission-btn box-bold" onclick="scrollToTargetAdjusted('tos',75)">More About Me</a>
+
+            <div class="external-links"><br>
+                <ul>
+
+                    <li><a id="instagram" href="https://www.instagram.com/rifkikrsna/" target="_blank"
+                            onmouseover="ExternalLinksEnter('instagram')" onmouseleave="ExternalLinksLeave()"><img
+                                src="resource/svg/instagram.svg">
+                            <p>Instagram</p>
+                        </a></li>
+
+                    <li><a id="github" href="https://github.com/Rifkikrsna" target="_blank"
+                            onmouseover="ExternalLinksEnter('github')" onmouseleave="ExternalLinksLeave()"><img
+                                src="resource/svg/Github.svg">
+                            <p>GitHub</p>
+                        </a></li>
+
+                    <li><a id="facebook" href="https://www.facebook.com/RifkikrsnaM" target="_blank"
+                            onmouseover="ExternalLinksEnter('facebook')" onmouseleave="ExternalLinksLeave()"><img
+                                src="resource/svg/facebook.svg">
+                            <p>facebook</p>
+                        </a></li>
+
+                    <li><a id="twitter" href="/404.html" target="_blank" onmouseover="ExternalLinksEnter('twitter')"
+                            onmouseleave="ExternalLinksLeave()"><img src="resource/svg/twitter.svg">
+                            <p>Twitter</p>
+                        </a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Sticky navbar-->
+    <div class="navbar box-mid">
+        <div class="navbrand" data-aos="fade-up" data-aos-once=true>
+            <a onclick="scrollToTarget('landing')">Rifki Krisna Maulana</a>
+        </div>
+        <div class="navcenter" data-aos="fade-up" data-aos-once=true>
+            <a onclick="scrollToTargetAdjusted('portfolio',75), Unclick()">Portfolio</a>
+            <a onclick="scrollToTargetAdjusted('commission',75), Unclick()">Cover Letter</a>
+            <a onclick="scrollToTargetAdjusted('tos',75), Unclick()">About</a>
+            <a id="nav-contact" onclick="scrollToTargetAdjusted('contact',75), Unclick()">Contact</a>
+        </div>
+        <div class="navsupport" data-aos="fade-up" data-aos-once=true><a onclick="scrollToTargetAdjusted('contact',75)"
+                target="_blank">Contact</a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Main section-->
+    <div class="content">
+
+        <!--Portfolio section-->
+        <div id="portfolio">
+            <div class="text-title" data-aos="fade-up">
+                <p>Portfolio</p>
+            </div>
+            <div class="portfolio-container">
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images">
+                        <a href="resource/image/RIFKI KRISNA MAULANA_Page_1.png" data-lightbox="rav-portfolio"><img
+                                src="resource/image/RIFKI KRISNA MAULANA_Page_1.png" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images">
+                        <a href="resource/image/BSC-IV-77-TSU2019.jpg" data-lightbox="rav-portfolio"><img
+                                src="resource/image/BSC-IV-77-TSU2019.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images">
+                        <a href="resource/image/TK1-XII-13180346-UBSI.jpg" data-lightbox="rav-portfolio"><img
+                                src="resource/image/TK1-XII-13180346-UBSI.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images">
+                        <a href="resource/image/Copy of Ccna1-cisco-UBSI-CENGK-certificate_page-0001.jpg" data-lightbox="rav-portfolio"><img
+                                src="resource/image/Copy of Ccna1-cisco-UBSI-CENGK-certificate_page-0001.jpg" loading="lazy"></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!--Comission section-->
+        <div id="commission">
+            <div class="text-title comm-title" data-aos="fade-up">
+                <p>Cover Letter</p>
+            </div>
+            <br>
+            <div class="commission-container animation-halfbody">
+                <div class="commission-container-left" data-aos="fade-up">
+                    <div class="img-solidcolor"></div>
+                    <div class="img-detailed"></div>
+                    <div class="img-blurry"></div>
+                    <div class="img-blender"></div>
+                    <div class="img-arch"></div>
+                    <div class="dynamic-price-container">
+                        <div class="dynamic-price-bg">
+                            <div class="dynamic-price-line-container box-bold">
+                                <div class="dynamic-price-line"></div>
+                                <div class="dynamic-price-triangle-L"></div>
+                                <div class="dynamic-price-triangle-R-down">
+                                    <div class="dynamic-pricetag box-bold"></div>
+                                </div>
+
+                            </div>
+                            <div class="dynamic-string text-normal">
+                                <p id="PARTNAME">Halfbody</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="dynamic-price-container-up">
+                        <div class="dynamic-price-bg">
+                            <div class="dynamic-price-line-container">
+                                <div class="dynamic-price-line"></div>
+                                <div class="dynamic-price-triangle-L"></div>
+                                <div class="dynamic-price-triangle-R"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commission-container-right" data-aos="fade-up">
+                    <div class="parts-container">
+                        <div class="parts-header text-normal">
+                            <p>Body parts</p>
+                        </div>
+                        <div class="parts-lists">
+
+                            <a id="BUSTUP" onclick="CropAnimate('BUSTUP'), scrollToTargetAdjusted('commission',0)">
+                                <!-- <p class="box-bold">Bust-up</p> -->
+                            </a>
+                            <a id="HALFBODY"
+                                onclick="CropAnimate('HALFBODY'), scrollToTargetAdjusted('commission',-50)">
+                                <p class="box-bold">Halfbody</p>
+                            </a>
+                            <a id="KNEEUP" onclick="CropAnimate('KNEEUP'), scrollToTargetAdjusted('commission',-100)">
+                                <!-- <p class="box-bold">Knee-up</p> -->
+                            </a>
+                            <a id="FULLBODY"
+                                onclick="CropAnimate('FULLBODY'), scrollToTargetAdjusted('commission',-200)">
+                                <p class="box-bold">Fullbody</p>
+                            </a>
+                        </div>
+
+                        <div class="background-header text-normal">
+                            <p>Background</p>
+                        </div>
+                        <div class="background-lists">
+
+                            <a id="SOLIDCOLOR" onclick="BgAnimate('SOLIDCOLOR')">
+                                <p class="box-bold">Solid Color</p>
+                            </a>
+                            <a id="BLURRY" onclick="BgAnimate('BLURRY')">
+                                <p class="box-bold">Detailed Blur</p>
+                            </a>
+                            <a id="DETAILED" onclick="BgAnimate('DETAILED')">
+                                <p class="box-bold">Detailed HD</p>
+                            </a>
+                            <a id="BLENDER">
+                                <p onclick="BgAnimate('BLENDER')" class="box-bold">3D Render</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="my-skill">
+                <div class="text-title" data-aos="fade-up">
+                    <p>My Skill</p>
+                </div>
+
+                <div class="skill-container" data-aos="fade-up">
+                    <div class="skill-container-left box-mid">
+                        <div class="skill-title text-header">
+                            Language
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/languages/us.png" width="40px" height="40px">
+                                <p>English</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/languages/indonesia.png" width="40px" height="40px">
+                                <p>Indonesian</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="PRO">Advanced</span>
+                            </div>
+
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/languages/japan.png" width="40px" height="40px">
+                                <p>Japanese</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="BEGINNER">Beginner</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="skill-container-middle box-mid">
+                        <div class="skill-title text-header">
+                            Software
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/software/vscode.svg" width="48px" height="48px">
+                                <p>VSCode</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/software/androidstudio.svg" width="48px" height="48px">
+                                <p>Android Studio</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/software/canva.svg" width="48px" height="48px">
+                                <p>Canva</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="language-container">
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/software/word.svg" width="48px" height="48px">
+                                <p>Word</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="PRO">Advanced</span>
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/software/excel.svg" width="48px" height="48px">
+                                <p>Excel</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="skill-container-right box-mid">
+                        <div class="skill-title text-header">
+                            Technology
+                        </div>
+
+                        <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/technology/html.png" width="48px" height="48px">
+                                <p>HTML</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="PRO">Advanced</span>
+                            </div>
+
+                        </div>
+
+                        <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/technology/css.png" width="48px" height="48px">
+                                <p>CSS</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div>
+
+                        <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/technology/js.png" width="48px" height="48px">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div>
+
+                        <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/technology/cpp.png" width="48px" height="48px">
+                                <p>C++</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div>
+
+                        <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/technology/github-mark-white.png" width="48px" height="48px">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="language-container">
+
+                            <div class="language-container-inner">
+                                <img src="resource/image/portfolio/technology/bash.png" width="48px" height="48px">
+                                <p>Bash</p>
+                            </div>
+                            <div class="language-container-inner-r">
+                                <span id="INTERMEDIATE">Intermediate</span>
+                            </div>
+
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="tos">
+                <div class="text-title" data-aos="fade-up">
+                    <p>About Me</p>
+                </div>
+                <div id="tos-img">
+                    <div class="tos-container text-header">
+                        <div class="general text-lists" data-aos="fade-up">
+                            <!-- <p>General</p> --><br>
+                            <!-- <div class="tos-list-container box-mid">
+                                <ul>
+                                    <li>The estimated time of delivery is <b>1 weeks to 2 months after I send you the
+                                            final sketch</b> depending on the complexity.</li>
+                                    <li>If however I could not deliver the final product in 3 months, 80% refund will be
+                                        sent.</li>
+                                    <li>Female characters are prefered, I can draw male too but the result will be not
+                                        as good as female.</li>
+                                    <li>Only 1 character.</li>
+                                    <li>Strictly No Ecchi and or NSFW.</li>
+                                    <li>No humongous oppai and or thicc thighs.</li>
+                                    <li>Not accepting Chibi, Mecha, Furry, Old Character, Weird Fetishes, Controversial
+                                        Topic, and Realistic Style.</li>
+                                </ul>
+                            </div>
+                        </div><br>
+                        <div class="payment text-lists" data-aos="fade-up">
+                            <p>Work Experience</p><br>
+                            <div class="tos-list-container box-mid">
+                                <ul>
+                                    <li>Only pay when I accept your commission.</li>
+                                    <li>Additional payment for faster commissioning.</li>
+                                    <li> Upfront payment:
+                                        <ul><br>
+                                            <li style="margin-left:20px;">First, 50% of the total price after I send you
+                                                the sketch.</li>
+                                            <li style="margin-left:20px;">Second, 50% of the total price after I send
+                                                you the final product.</li>
+                                        </ul>
+                                    </li><br>
+                                    <li>I may refuse or cancel your commission with the refund as long as the commission
+                                        is not finished.</li>
+                                </ul>
+                            </div>
+                        </div><br> -->
+
+                        
+                        <div class="final-artwork text-lists" data-aos="fade-up">
+                            <p>Education</p><br>
+                            
+                            <div class="tos-list-container box-mid">
+                                <ul>
+                                    <li>NOW Universitas Nusa Mandiri</li>
+                                    <li>Universitas Bina Sarana Informatika</li> 
+                                    <li>SMK Taman Sakti</li>
+                                    <li>SMPN 120</li>
+                                    <li>Sekolah Dasar Negeri, SDN 02</li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        
+                        </div><br>
+                        <!-- <div class="copyright text-lists" data-aos="fade-up">
+                            <p>Copyright</p><br>
+                            <div class="tos-list-container box-mid">
+                                <ul>
+                                    <li>Both the artist (me) and the client (you) should retain the Copyrights.</li>
+                                    <li>You are free to redistribute the artworks.</li>
+                                    <li>Unless you choose the "Commercial" category, <b>DO NOT</b> sell or make any
+                                        profit from the artworks.</li>
+                                </ul>
+                            </div>
+                        </div><br> -->
+                    </div>
+                    <!--
+                <div class="agree-container" data-aos="fade-up">
+                    <a class="agree-check-1 box-bold"></a>
+                    <div class="agree-check-2"><p>I agree with the terms above.</p></div>
+                    
+                </div><br><br>
+                <div data-aos="fade-up">
+                    <a class="order-btn-enabled box-bold" onclick="ForwardToForm()">Order now</a>
+                    <a class="order-btn-disabled box-bold">Sorry, Commission Closed</a>
+                </div>
+                -->
+
+                </div>
+            </div>
+            <!-- <br><br><br><br><br><br> -->
+
+            <div id="contact">
+                <div class="text-title" data-aos="fade-up">
+                    <p>Contact</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-left">
+                        <div class="contact-inner-container ">
+                            <form id="FORM">
+                                <div class="text-header" data-aos="fade-up">Message</div>
+                                <br>
+                                <br>
+
+                                <div class="contact-thin-text" data-aos="fade-up">Name</div>
+                                <input type="text" id="NAME" name="Name" class="box-mid" placeholder="Your name"
+                                    required data-aos="fade-up">
+
+                                <div class="contact-thin-text" data-aos="fade-up">Email</div>
+                                <input type="email" id="EMAIL" name="Email" class="box-mid" placeholder="Email address"
+                                    required data-aos="fade-up">
+
+                                <div class="contact-thin-text" data-aos="fade-up">Message</div>
+                                <textarea id="MESSAGE" name="Message" class="box-mid" rows="6" placeholder="Message"
+                                    required data-aos="fade-up"></textarea>
+                                <div data-aos="fade-up">
+                                    <div class="send box-mid" onclick="SendEmail()">Send</div>
+                                </div>
+
+                                <div class="text-header email-not-sent">
+                                    Sending email...
+                                </div>
+                                <!-- <form action="https://formsubmit.co/kamalmuara800@gmail.com" method="POST" /> -->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-inner-container">
+                            <div class="text-header" data-aos="fade-up">Get in touch</div>
+
+
+                            <div class="contact-thin-text" data-aos="fade-up">
+                                <p>You can contact me via my social media below:</p>
+                            </div>
+                            <div class="external-links external-links-2" data-aos="fade-up"><br>
+                                <ul>
+                                    <li><a id="instagram2" href="https://www.instagram.com/rifkikrsna/" target="_blank"
+                                            onmouseover="ExternalLinksEnter('instagram2')"
+                                            onmouseleave="ExternalLinksLeave()"><img src="resource/svg/instagram.svg">
+                                            <p>Instagram</p>
+                                        </a></li>
+
+                                    <li><a id="facebook2" href="https://www.facebook.com/RifkikrsnaM" target="_blank"
+                                            onmouseover="ExternalLinksEnter('facebook2')"
+                                            onmouseleave="ExternalLinksLeave()"><img src="resource/svg/facebook.svg">
+                                            <p>Facebook</p>
+                                        </a></li>
+
+                                    <li><a id="twitter2" href="/404.html" target="_blank"
+                                            onmouseover="ExternalLinksEnter('twitter2')"
+                                            onmouseleave="ExternalLinksLeave()"><img src="resource/svg/twitter.svg">
+                                            <p>Twitter</p>
+                                        </a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Page loading animation when loading is complete-->
+            <script>
+                $(window).on("load", function () {
+                    $(".loader-wrapper").fadeOut("slow");
+                })
+            </script>
+        </div>
+        <!--Animate on Scroll library initialization-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: -75,
+                delay: 0,
+                duration: 1000,
+                easing: 'ease',
+                once: false,
+                mirror: false,
+                anchorPlacement: 'top-bottom'
+
+            });
+        </script>
+        <script src="js/hamburger.js"></script>
+        <script>Initialize()</script>
+</body>
+<footer class="shad-bold">
+    <div class="B text-normal opacity-mid">
+        <p> &#169; 2024 by Rifkikrsna<br><br></p>
+    </div>
+
+    <!-- <div class="B text-normal">
+        <p>♥ Created by Rifki Krisna Maulana with love and passion ♥</p>
+    </div> -->
+    <!-- <div class="B text-normal">
+        <p>Powered by pure HTML/CSS and JavaScript<br><br></p>
+    </div> -->
+    
+    <div class="B text-normal opacity-mid">
+        <p>Contact: rifkikrisna452@gmail.com</p>
+    </div>
+</footer>
+
+</html>
+<!-- check -->
