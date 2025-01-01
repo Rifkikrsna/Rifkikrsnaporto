@@ -211,9 +211,7 @@ body{
 #commission .text-title p:after{
     width: 150px;
 }
-#commission{
-    margin-top: 100px;
-}
+
 .comm-title::after{
     color: white;
     margin-top: 15px;
@@ -285,6 +283,7 @@ body{
     transition: 1s;
     min-height: 110vh;
 }
+
 .img-arch{
     background-image: url(../resource/image/commission/CV.png);
     opacity: 100%;
@@ -630,7 +629,7 @@ body{
 
 #tos{
     position: relative;
-    margin-top: 150px;
+    
 }
 #tos .text-title p:after{
     width: 200px;

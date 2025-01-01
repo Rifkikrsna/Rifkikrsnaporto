@@ -14,7 +14,7 @@
     </script>
 
     <!--Import files and libaries-->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon1.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="resource/icon/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-9">
     <title>Rifkikrsna</title>
     <link rel="stylesheet" href="css/header.css">
@@ -56,11 +56,96 @@
         <div id="scrollbar"></div>
         <div class="Title">
             <img src="resource/image/conn.png" class="shad-mid">
-            <h1>PORTOFOLIO</h1>
-            <p>I am <b>Rifki Krisna Maulana</b><br>
-                Welcome to my web page!</p>
+            <style>
+                /* Salju yang Turun */
+                .snow {
+                    position: absolute;
+                    top: -10px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: white;
+                    border-radius: 50%;
+                    animation: snow 5s linear infinite;
+                }
+
+                @keyframes snow {
+                    0% {
+                        top: -10px;
+                        opacity: 1;
+                    }
+
+                    100% {
+                        top: 100%;
+                        opacity: 0;
+                    }
+                }
+
+                /* Animasi Teks */
+                h1,
+                p {
+                    color: white;
+                    font-family: 'Arial', sans-serif;
+                    text-align: center;
+                    z-index: 2;
+                }
+
+                /* Efek animasi untuk teks */
+                h1 {
+                    font-size: 60px;
+                    font-weight: bold;
+                    animation: fadeInText 3s ease-out forwards;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.6;
+                    opacity: 0;
+                    animation: fadeInText 4s ease-out forwards;
+                }
+
+                /* Animasi Fade In untuk teks */
+                @keyframes fadeInText {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                /* Salju yang lebih banyak dengan animasi acak */
+                .snow:nth-child(odd) {
+                    animation-duration: 6s;
+                    animation-delay: 1s;
+                }
+
+                .snow:nth-child(even) {
+                    animation-duration: 7s;
+                    animation-delay: 2s;
+                }
+            </style>
+
+
+            <div class="snow" style="left: 20%;"></div>
+            <div class="snow" style="left: 40%;"></div>
+            <div class="snow" style="left: 60%;"></div>
+            <div class="snow" style="left: 80%;"></div>
+
+
+
+            <!-- <h1>PORTOFOLIO</h1> -->
+            <h1>Hello, I am <br> Rifki Krisna Maulana</h1> <br>
+            <p> I am very interested in Web Development. <br> I specialize in building responsive and user friendly web
+                applications using the latest technologies.
+                With experience in a variety of programming languages and frameworks, I combine creativity and problem
+                solving to deliver impactful and efficient solutions. Always eager to learn and develop, I aim to create
+                web experiences that truly resonate with users.
+            </p>
             <svg></svg><br>
-            <a class="commission-btn box-bold" onclick="scrollToTargetAdjusted('tos',75)">More About Me</a>
+            <a class="commission-btn box-bold"
+                href="../porto/home.html"
+                target="_blank">PROJECT</a>
 
             <div class="external-links"><br>
                 <ul>
@@ -77,15 +162,15 @@
                             <p>GitHub</p>
                         </a></li>
 
-                    <li><a id="facebook" href="https://www.facebook.com/RifkikrsnaM" target="_blank"
-                            onmouseover="ExternalLinksEnter('facebook')" onmouseleave="ExternalLinksLeave()"><img
-                                src="resource/svg/facebook.svg">
-                            <p>facebook</p>
+                    <li><a id="linkedin" href="https://www.linkedin.com/in/rifkikrsna" target="_blank"
+                            onmouseover="ExternalLinksEnter('linkedin')" onmouseleave="ExternalLinksLeave()"><img
+                                src="resource/svg/linkedin.svg">
+                            <p>LinkedIn</p>
                         </a></li>
 
-                    <li><a id="twitter" href="/404.html" target="_blank" onmouseover="ExternalLinksEnter('twitter')"
-                            onmouseleave="ExternalLinksLeave()"><img src="resource/svg/twitter.svg">
-                            <p>Twitter</p>
+                    <li><a id="whatsapp" href="/404.html" target="_blank" onmouseover="ExternalLinksEnter('whatsapp')"
+                            onmouseleave="ExternalLinksLeave()"><img src="resource/svg/whatsapp.svg">
+                            <p>Whatsapp</p>
                         </a></li>
                 </ul>
 
@@ -99,9 +184,10 @@
             <a onclick="scrollToTarget('landing')">Rifki Krisna Maulana</a>
         </div>
         <div class="navcenter" data-aos="fade-up" data-aos-once=true>
-            <a onclick="scrollToTargetAdjusted('portfolio',75), Unclick()">Portfolio</a>
-            <a onclick="scrollToTargetAdjusted('commission',75), Unclick()">Cover Letter</a>
             <a onclick="scrollToTargetAdjusted('tos',75), Unclick()">About</a>
+            <a onclick="scrollToTargetAdjusted('portfolio',75), Unclick()">E-Certify</a>
+            <a onclick="scrollToTargetAdjusted('my-skill',75), Unclick()">My Skill</a>
+
             <a id="nav-contact" onclick="scrollToTargetAdjusted('contact',75), Unclick()">Contact</a>
         </div>
         <div class="navsupport" data-aos="fade-up" data-aos-once=true><a onclick="scrollToTargetAdjusted('contact',75)"
@@ -118,19 +204,127 @@
 
     <!--Main section-->
     <div class="content">
+        
+        <!--Comission section-->
+        <div id="commission">
+            <!-- about section -->
+            <div id="tos">
+                <div class="text-title" data-aos="fade-up">
+                    <p>About Me</p>
+                </div>
+                
+                <div id="tos-img">
+                    <div class="tos-container text-header">
+                        <div class="general text-lists" data-aos="fade-up">
+                            
+                            <div class="tos-list-container box-mid">
+                                <p>Armed with certifications in UI/UX Design, IoT, CCNA and as well as skills in web and mobile application development, I am in the Associate's degree in Information Technology from Universitas Nusa Mandiri.</p>
+                            </div>
+                        </div><br>
 
-        <!--Portfolio section-->
+                        
+
+                        <!-- pengalaman -->
+                        <div class="payment text-lists" data-aos="fade-up">
+                            <p>Work Experience</p><br>
+                            <div class="tos-list-container box-mid">
+                                <p>My tenure at PT. Rajawali Technologi Indonesia, Mitra Badan Pusat Statistik Jakarta Utara, and Gate Management in Jakarta International Expo Kemayoran, honed my communication abilities and technical acumen, pairing my practical experience with a robust academic foundation. My core competencies lie in blending user experience design with emerging technologies to create innovative solutions. As part of our team, we aimed to drive digital transformation and enhance user interactions through meticulous design and technology integration. Since 2021-2024</p>
+                            </div>
+                        </div><br>
+
+                        <!-- sekolah -->
+                        <div class="final-artwork text-lists" data-aos="fade-up">
+                            <p>Educations</p><br>
+                            <style>
+                                .tos-list-container {
+                                    border: 2px solid rgba(0, 0, 0, 0);
+                                    /* Border for the container */
+                                    padding: 20px;
+                                    /* Add some padding inside the border */
+                                    display: flex;
+                                    /* Enable Flexbox */
+                                    flex-direction: column;
+                                    /* Arrange items vertically */
+                                    gap: 10px;
+                                    /* Space between education items */
+                                }
+
+                                .education-item {
+                                    margin: 20px auto;
+                                    width: 80%;
+                                }
+
+                                .edu_left {
+                                    float: left;
+                                    width: 85%;
+                                    border-color: orange;
+                                    border-style: solid none solid solid;
+                                    padding: 30px;
+                                    text-align: left;
+                                }
+
+                                .edu_right {
+                                    float: left;
+                                    width: 85%;
+                                    border-color: orange;
+                                    border-style: none solid none none;
+                                    padding: 30px;
+                                    text-align: right;
+                                }
+                            </style>
+                            <div class="tos-list-container box-mid">
+                                <div class="educations">
+                                    <div class="education-item">
+                                        <div class="edu_left">
+                                            <h4>Elementary School</h4>
+                                            <h4>2005 - 2011 SDN 02 Kamal Muara</h4>
+                                        </div>
+                                        <div class="edu_right">
+                                            <h4>Junior Hight School</h4>
+                                            <h4>2011 - 2014 SMP Negeri 120 Jakarta </h4>
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div class="edu_left">
+                                            <h4>Senior Hight School</h4>
+                                            <h4>2015 - 2018 SMK Taman Sakti Jakarta </h4>
+                                        </div>
+                                        <div class="edu_right">
+                                            <h4>Associate Degree</h4>
+                                            <h4>Computer Technology, Universitas Bina Sarana Informatika</h4>
+                                        </div>
+                                    </div>
+                                    <div class="education-item">
+                                        <div class="edu_left">
+                                            <h4>Bachelor Degree</h4>
+                                            <h4>Informatics, Universitas Nusa Mandiri</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <br>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--Portfolio section-->
         <div id="portfolio">
             <div class="text-title" data-aos="fade-up">
-                <p>Portfolio</p>
+                <p>E-Certify</p>
             </div>
             <div class="portfolio-container">
-
+                
                 <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
                     <div class="portfolio-images">
-                        <a href="resource/image/RIFKI KRISNA MAULANA_Page_1.png" data-lightbox="rav-portfolio"><img
-                                src="resource/image/RIFKI KRISNA MAULANA_Page_1.png" loading="lazy"></a>
+                        <a href="resource/image/RIFKI KRISNA MAULANA_Page_1.png" data-lightbox="rav-portfolio">
+                            <img src="resource/image/RIFKI KRISNA MAULANA_Page_1.png" loading="lazy"></a>
                     </div>
+                    
                 </div>
 
                 <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
@@ -139,8 +333,6 @@
                                 src="resource/image/BSC-IV-77-TSU2019.jpg" loading="lazy"></a>
                     </div>
                 </div>
-
-                
 
                 <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
                     <div class="portfolio-images">
@@ -151,99 +343,25 @@
 
                 <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
                     <div class="portfolio-images">
-                        <a href="resource/image/Copy of Ccna1-cisco-UBSI-CENGK-certificate_page-0001.jpg" data-lightbox="rav-portfolio"><img
-                                src="resource/image/Copy of Ccna1-cisco-UBSI-CENGK-certificate_page-0001.jpg" loading="lazy"></a>
+                        <a href="resource/image/Copy of Ccna1-cisco-UBSI-CENGK-certificate_page-0001.jpg"
+                            data-lightbox="rav-portfolio"><img
+                                src="resource/image/Copy of Ccna1-cisco-UBSI-CENGK-certificate_page-0001.jpg"
+                                loading="lazy"></a>
                     </div>
                 </div>
 
-                
+                <div class="portfolio-gallery-item box-bold" data-aos="zoom-in" data-aos-delay=0>
+                    <div class="portfolio-images">
+                        <a href="resource/image/E-certificate Coursera DAVKS8ZQAA8F.jpg"
+                            data-lightbox="rav-portfolio"><img
+                                src="resource/image/E-certificate Coursera DAVKS8ZQAA8F.jpg"
+                                loading="lazy"></a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-
-        <!--Comission section-->
-        <div id="commission">
-            <div class="text-title comm-title" data-aos="fade-up">
-                <p>Cover Letter</p>
-            </div>
-            <br>
-            <div class="commission-container animation-halfbody">
-                <div class="commission-container-left" data-aos="fade-up">
-                    <div class="img-solidcolor"></div>
-                    <div class="img-detailed"></div>
-                    <div class="img-blurry"></div>
-                    <div class="img-blender"></div>
-                    <div class="img-arch"></div>
-                    <div class="dynamic-price-container">
-                        <div class="dynamic-price-bg">
-                            <div class="dynamic-price-line-container box-bold">
-                                <div class="dynamic-price-line"></div>
-                                <div class="dynamic-price-triangle-L"></div>
-                                <div class="dynamic-price-triangle-R-down">
-                                    <div class="dynamic-pricetag box-bold"></div>
-                                </div>
-
-                            </div>
-                            <div class="dynamic-string text-normal">
-                                <p id="PARTNAME">Halfbody</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="dynamic-price-container-up">
-                        <div class="dynamic-price-bg">
-                            <div class="dynamic-price-line-container">
-                                <div class="dynamic-price-line"></div>
-                                <div class="dynamic-price-triangle-L"></div>
-                                <div class="dynamic-price-triangle-R"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="commission-container-right" data-aos="fade-up">
-                    <div class="parts-container">
-                        <div class="parts-header text-normal">
-                            <p>Body parts</p>
-                        </div>
-                        <div class="parts-lists">
-
-                            <a id="BUSTUP" onclick="CropAnimate('BUSTUP'), scrollToTargetAdjusted('commission',0)">
-                                <!-- <p class="box-bold">Bust-up</p> -->
-                            </a>
-                            <a id="HALFBODY"
-                                onclick="CropAnimate('HALFBODY'), scrollToTargetAdjusted('commission',-50)">
-                                <p class="box-bold">Halfbody</p>
-                            </a>
-                            <a id="KNEEUP" onclick="CropAnimate('KNEEUP'), scrollToTargetAdjusted('commission',-100)">
-                                <!-- <p class="box-bold">Knee-up</p> -->
-                            </a>
-                            <a id="FULLBODY"
-                                onclick="CropAnimate('FULLBODY'), scrollToTargetAdjusted('commission',-200)">
-                                <p class="box-bold">Fullbody</p>
-                            </a>
-                        </div>
-
-                        <div class="background-header text-normal">
-                            <p>Background</p>
-                        </div>
-                        <div class="background-lists">
-
-                            <a id="SOLIDCOLOR" onclick="BgAnimate('SOLIDCOLOR')">
-                                <p class="box-bold">Solid Color</p>
-                            </a>
-                            <a id="BLURRY" onclick="BgAnimate('BLURRY')">
-                                <p class="box-bold">Detailed Blur</p>
-                            </a>
-                            <a id="DETAILED" onclick="BgAnimate('DETAILED')">
-                                <p class="box-bold">Detailed HD</p>
-                            </a>
-                            <a id="BLENDER">
-                                <p onclick="BgAnimate('BLENDER')" class="box-bold">3D Render</p>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
 
 
             <div id="my-skill">
@@ -303,7 +421,8 @@
                         </div>
                         <div class="language-container">
                             <div class="language-container-inner">
-                                <img src="resource/image/portfolio/software/androidstudio.svg" width="48px" height="48px">
+                                <img src="resource/image/portfolio/software/androidstudio.svg" width="48px"
+                                    height="48px">
                                 <p>Android Studio</p>
                             </div>
                             <div class="language-container-inner-r">
@@ -330,7 +449,7 @@
 
                         </div>
 
-                        
+
 
                         <div class="language-container">
 
@@ -401,7 +520,8 @@
                         <div class="language-container">
 
                             <div class="language-container-inner">
-                                <img src="resource/image/portfolio/technology/github-mark-white.png" width="48px" height="48px">
+                                <img src="resource/image/portfolio/technology/github-mark-white.png" width="48px"
+                                    height="48px">
                                 <p>GitHub</p>
                             </div>
                             <div class="language-container-inner-r">
@@ -410,110 +530,91 @@
 
                         </div>
 
-                        <!-- <div class="language-container">
 
-                            <div class="language-container-inner">
-                                <img src="resource/image/portfolio/technology/bash.png" width="48px" height="48px">
-                                <p>Bash</p>
-                            </div>
-                            <div class="language-container-inner-r">
-                                <span id="INTERMEDIATE">Intermediate</span>
-                            </div>
-
-                        </div> -->
                     </div>
 
                 </div>
             </div>
 
-            <div id="tos">
-                <div class="text-title" data-aos="fade-up">
-                    <p>About Me</p>
-                </div>
-                <div id="tos-img">
-                    <div class="tos-container text-header">
-                        <div class="general text-lists" data-aos="fade-up">
-                            <!-- <p>General</p> --><br>
-                            <!-- <div class="tos-list-container box-mid">
-                                <ul>
-                                    <li>The estimated time of delivery is <b>1 weeks to 2 months after I send you the
-                                            final sketch</b> depending on the complexity.</li>
-                                    <li>If however I could not deliver the final product in 3 months, 80% refund will be
-                                        sent.</li>
-                                    <li>Female characters are prefered, I can draw male too but the result will be not
-                                        as good as female.</li>
-                                    <li>Only 1 character.</li>
-                                    <li>Strictly No Ecchi and or NSFW.</li>
-                                    <li>No humongous oppai and or thicc thighs.</li>
-                                    <li>Not accepting Chibi, Mecha, Furry, Old Character, Weird Fetishes, Controversial
-                                        Topic, and Realistic Style.</li>
-                                </ul>
-                            </div>
-                        </div><br>
-                        <div class="payment text-lists" data-aos="fade-up">
-                            <p>Work Experience</p><br>
-                            <div class="tos-list-container box-mid">
-                                <ul>
-                                    <li>Only pay when I accept your commission.</li>
-                                    <li>Additional payment for faster commissioning.</li>
-                                    <li> Upfront payment:
-                                        <ul><br>
-                                            <li style="margin-left:20px;">First, 50% of the total price after I send you
-                                                the sketch.</li>
-                                            <li style="margin-left:20px;">Second, 50% of the total price after I send
-                                                you the final product.</li>
-                                        </ul>
-                                    </li><br>
-                                    <li>I may refuse or cancel your commission with the refund as long as the commission
-                                        is not finished.</li>
-                                </ul>
-                            </div>
-                        </div><br> -->
+            <style>
+                :root {
+                    --main-color: #FD9E04;
+                    --text-color: #fff;
+                }
+    
+                .cta {
+                    cursor: pointer;
+                    background: linear-gradient(94.94deg, #1d3036 -1.76%, #1a2530 80.53%);
+                    padding: 50px 20px;
+                    border-radius: 20px;
+                    transition: 0.9s;
+                    width: 55%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    box-shadow:
+                        3.4px 3.4px 2.7px rgba(0, 0, 0, 0.031),
+                        8.7px 8.7px 6.9px rgba(0, 0, 0, 0.044),
+                        17.7px 17.7px 14.2px rgba(0, 0, 0, 0.056),
+                        36.5px 36.5px 29.2px rgba(0, 0, 0, 0.069),
+                        100px 100px 80px rgba(0, 0, 0, 0.08);
+    
+                }
+    
+                @media screen and (max-width: 768px) {
+                    .cta {
+                        width: auto;
+                    }
+                }
+    
+                .cta:hover {
+                    scale: 103%;
+                    transition: 0.5s;
+                }
+    
+                .cta h4 {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    margin-bottom: 30px;
+                    color: var(--text-color);
+                }
+    
+                .cta h2 {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    margin-bottom: 40px;
+                    color: var(--main-color);
+                }
+    
+                .btn {
+                    background: var(--main-color);
+                    color: var(--text-color);
+                    box-shadow: 5px 4px var(--text-color);
+                    padding: 0 25px;
+                    line-height: 52px;
+                    display: inline-block;
+                    text-decoration: none;
+                    border: 1px solid transparent;
+                    font-size: 24px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    transition: ease all 0.35s;
+                }
+    
+                .btn:hover {
+                    background: var(--text-color);
+                    color: var(--main-color);
+                    box-shadow: 5px 4px var(--main-color);
+                }
+            </style>
+            <section class="cta">
+                <h4>Let`s Talk Opportunities</h4>
+                <h2>I`am ready to join !</h2>
+                <a href="https://drive.google.com/file/d/1XEpnV-7p-5llhJQcjpSKL9AsXTK-4pnJ/view?usp=sharing"target="_blank" class="btn">Hire Me</a>
+            </section>
+            <br>
 
-                        
-                        <div class="final-artwork text-lists" data-aos="fade-up">
-                            <p>Education</p><br>
-                            
-                            <div class="tos-list-container box-mid">
-                                <ul>
-                                    <li>NOW Universitas Nusa Mandiri</li>
-                                    <li>Universitas Bina Sarana Informatika</li> 
-                                    <li>SMK Taman Sakti</li>
-                                    <li>SMPN 120</li>
-                                    <li>Sekolah Dasar Negeri, SDN 02</li>
-                                    
-                                    
-                                </ul>
-                            </div>
-                        
-                        </div><br>
-                        <!-- <div class="copyright text-lists" data-aos="fade-up">
-                            <p>Copyright</p><br>
-                            <div class="tos-list-container box-mid">
-                                <ul>
-                                    <li>Both the artist (me) and the client (you) should retain the Copyrights.</li>
-                                    <li>You are free to redistribute the artworks.</li>
-                                    <li>Unless you choose the "Commercial" category, <b>DO NOT</b> sell or make any
-                                        profit from the artworks.</li>
-                                </ul>
-                            </div>
-                        </div><br> -->
-                    </div>
-                    <!--
-                <div class="agree-container" data-aos="fade-up">
-                    <a class="agree-check-1 box-bold"></a>
-                    <div class="agree-check-2"><p>I agree with the terms above.</p></div>
-                    
-                </div><br><br>
-                <div data-aos="fade-up">
-                    <a class="order-btn-enabled box-bold" onclick="ForwardToForm()">Order now</a>
-                    <a class="order-btn-disabled box-bold">Sorry, Commission Closed</a>
-                </div>
-                -->
 
-                </div>
-            </div>
-            <!-- <br><br><br><br><br><br> -->
+
 
             <div id="contact">
                 <div class="text-title" data-aos="fade-up">
@@ -619,7 +720,7 @@
     <!-- <div class="B text-normal">
         <p>Powered by pure HTML/CSS and JavaScript<br><br></p>
     </div> -->
-    
+
     <div class="B text-normal opacity-mid">
         <p>Contact: rifkikrisna452@gmail.com</p>
     </div>

@@ -24,11 +24,12 @@ html {
     overflow-y: hidden;
 }
 #header-img{
-    background-image: url(../resource/image/sst.jpg);
+    background-image: url(../resource/image/bg.jpg);
     background-color: rgb(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
+    
 }
 
 /*---------------------------------------------------------------------------------------------------*/
@@ -130,7 +131,7 @@ html {
     display: block;
     line-height: 21px;
     transition: 0.5s;
-
+   
 }
 .Title img{
     width: 200px;
@@ -140,10 +141,11 @@ html {
 
 .Title h1{
     font-weight: 700;
-    line-height: 80px;
+    line-height: 40px;
     font-size: 38px;
     transition: 0.5s;
     text-align: center;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 .Title p{
     font-weight: 300;
@@ -153,7 +155,7 @@ html {
 }
 .Title svg{
     margin-top: 21px;
-    width: 198px;
+    width: 220px;
     height: 6px;
     background: linear-gradient(94.94deg, #FD9E04 -1.76%, #FF4C01 80.53%);
     border-radius: 75px;
@@ -167,19 +169,19 @@ html {
 .commission-btn{
     cursor: pointer;
     top: 21px;
-    width: 352px;
+    width: 220px;
     position: relative;
     display: inline-block;
     font-style: bold;
     font-size: 26px;
     color: white;
     line-height:63px;
-
     align-items: center;
     text-align: center;
     background: linear-gradient(94.94deg, #FD9E04 -1.76%, #FF4C01 80.53%);
     border-radius: 75px;
     transition: 0.5s;
+    text-decoration-line: none;
 }
 .commission-btn:hover{
     background: white;
@@ -237,6 +239,10 @@ html {
 /*===================================================================================================*/
 /*---------------------------------------------------------------------------------------------------*/
 
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
 
 @media(max-width: 800px){
     .Title img{
@@ -246,11 +252,12 @@ html {
     .nav-links ul li a{
         font-size: calc(18px / 1.2);
     }
-    .Title h1{
-        font-size: calc(38px / 1.2);
-    }
     .Title p{
         font-size: calc(18px / 1.2);
+        justify-content: center;
+    }
+    .Title h1{
+        font-size: calc(38px / 1.2);
     }
     .Title svg{
         height: calc(8px / 1.2);
